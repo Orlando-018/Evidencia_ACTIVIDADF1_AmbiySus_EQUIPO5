@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(images/portada.avif);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.imagen {
+    justify-content: right;
+    width: 350px;
+    height: 250px;
+    margin-right: 300px;
+}
+
+.imagen2 {
+    width: 350px;
+    height: 250px;
+    margin-left: 300px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 80px;
+    background: linear-gradient(
+        90deg,
+        rgba(203,18,133,1)0%,
+        rgba(80,49,145,1) 70%
+    );
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FIME {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #dedede;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ffffff;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    margin: 0 50px 10px 50px;
+    color: white;
+}
+
+p2 {
+    margin: 0 50px 10px 50px;
+    color: white;
+}
+
+p3 {
+    margin: 0 50px 10px 50px;
+    color: white;
+}
+
+p4 {
+    margin: 0 50px 10px 50px;
+    color: white;
+}
+
+p5 {
+    color: white;
+}
+
+@media(max-width:991px) {
+    .content {
+        min-height: 70px;
+    }
+
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+        90deg,
+        rgba(203,18,133,1)0%,
+        rgba(80,49,145,1) 70%
+    );
+    display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~ .navbar {
+        display: initial;
+    }
+}
